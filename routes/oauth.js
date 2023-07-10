@@ -15,8 +15,6 @@ async function getUserData(access_token) {
     console.log('data', data)
 }
 
-
-
 /* GET home page. */
 router.get('/', async function (req, res, next) {
 
@@ -41,7 +39,6 @@ router.get('/', async function (req, res, next) {
     } catch (err) {
         console.log('Error logging in with OAuth2 user', err)
     }
-
 
     // res.redirect(303, 'http://localhost:5173/');
 

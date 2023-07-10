@@ -6,7 +6,6 @@ dotenv.config()
 var router = express.Router();
 
 router.post('/oauth-link', async (req, res, next) => {
-    // res.send('Hello World!')
     res.header('Access-Control-Allow-Origin', 'http://localhost:3001')
     res.header('Referrer-Policy', 'no-referrer-when-downgrade')
 
@@ -26,10 +25,5 @@ router.post('/oauth-link', async (req, res, next) => {
 
     res.json({ url: authrorizeUrl })
 })
-
-// app.listen(port, () => {
-//     console.log(`Example app listening on port ${port}`)
-
-// })
 
 module.exports = router
